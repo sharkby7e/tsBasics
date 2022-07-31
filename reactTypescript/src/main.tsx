@@ -6,6 +6,6 @@ import Hooks from "./2-hooks";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <Types />
+    <Hooks />
   </React.StrictMode>
 );
