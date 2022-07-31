@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
-import { useState } from "react";
+import React from "react";
+import { useState, useRef } from "react";
 
 interface Todo {
   id: number;
@@ -14,7 +14,7 @@ function AddItem({ handleClick }: AddItemProps) {
   const inputRef = useRef<HTMLInputElement>(null);
   return (
     <div className="add-todo">
-      <input ref={inputRef} placeholder="what do you need to do?" />
+      <input ref={inputRef} placeholder="What do you need to do?" />
       <button
         onClick={() => {
           if (inputRef.current && inputRef.current.value) {
@@ -35,6 +35,7 @@ function App() {
   function handleClick(text: Todo["text"]) {
     return setItems([...item, { text, id: item.length + 1 }]);
   }
+
   function remove(id: Todo["id"]) {
     return setItems([...item.filter((item) => item.id !== id)]);
   }
