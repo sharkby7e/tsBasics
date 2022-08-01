@@ -1,5 +1,5 @@
-import React from "react";
-import { useState, useRef } from "react";
+import React, { useReducer, useState, useRef } from "react";
+// import { useState, useRef } from "react";
 
 interface Todo {
   id: number;
@@ -8,6 +8,13 @@ interface Todo {
 
 interface AddItemProps {
   handleClick: (text: Todo["text"]) => void;
+}
+
+const initialState = { count: 0 };
+
+enum ACTION_TYPE {
+  increment = "increment",
+  decrement = "decrement",
 }
 
 function AddItem({ handleClick }: AddItemProps) {
@@ -29,8 +36,20 @@ function AddItem({ handleClick }: AddItemProps) {
   );
 }
 
+function reducer(state: typeof initialState, action: { type: ACTION_TYPE }) {
+  switch (action.type) {
+    case ACTION_TYPE.increment:
+      return { count: state.count + 1 };
+    case ACTION_TYPE.decrement:
+      return { count: state.count - 1 };
+    default:
+      throw new Error("What in the world?");
+  }
+}
+
 function App() {
   const [item, setItems] = useState<Todo[]>([]);
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   function handleClick(text: Todo["text"]) {
     return setItems([...item, { text, id: item.length + 1 }]);
@@ -54,6 +73,13 @@ function App() {
         })}
       </ul>
       <AddItem handleClick={handleClick} />
+      Count {state.count}
+      <button onClick={() => dispatch({ type: ACTION_TYPE.decrement })}>
+        -
+      </button>
+      <button onClick={() => dispatch({ type: ACTION_TYPE.increment })}>
+        +
+      </button>
     </div>
   );
 }
