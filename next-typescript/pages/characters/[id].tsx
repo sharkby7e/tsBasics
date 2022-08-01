@@ -1,12 +1,10 @@
-import { Character, GetCharacterResults } from "../../types";
+import { Character } from "../../types";
 import Image from "next/image";
 import imageLoader from "../../imageLoader";
 import { GetServerSideProps } from "next";
-import { useRouter } from "next/router";
+import Layout from "../../components/Layout";
 
 function CharacterPage({ character }: { character: Character }) {
-  const router = useRouter();
-
   return (
     <div>
       <h1>{character.name}</h1>
@@ -21,6 +19,11 @@ function CharacterPage({ character }: { character: Character }) {
     </div>
   );
 }
+
+CharacterPage.getLayout = function getLayout(page: typeof CharacterPage) {
+  // console.log(typeof CharacterPage);
+  return <Layout>{page}</Layout>;
+};
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const res = await fetch(
