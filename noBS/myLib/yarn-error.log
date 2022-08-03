@@ -1,0 +1,41 @@
+Arguments: 
+  /Users/sharkbyte/.nvm/versions/node/v16.16.0/bin/node /opt/homebrew/bin/yarn add --dev jest typesript ts-jest @types/jest
+
+PATH: 
+  /Users/sharkbyte/.nvm/versions/node/v16.16.0/bin:/Users/sharkbyte/.bun/bin:/Users/sharkbyte/.gem/ruby/3.1.2/bin:/Users/sharkbyte/.rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/bin:/Users/sharkbyte/.rubies/ruby-3.1.2/bin:/opt/homebrew/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.16.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/typesript: Not found
+      at Request.params.callback [as _callback] (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:66145:18)
+      at Request.self.callback (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:527:28)
+      at Request.<anonymous> (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:527:28)
+      at IncomingMessage.<anonymous> (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:641:28)
+      at IncomingMessage.emit (node:events:539:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "myLib",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
