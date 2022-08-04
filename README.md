@@ -2,7 +2,7 @@
 
 Learning TypeScript
 
-## [YouTube Playlist by TomDoesTech](https://www.youtube.com/playlist?list=PL0iFifR5umcnAbG8YDTkHrTv7aSNX3sOT)
+## [TomDoesTech TSbasics](https://www.youtube.com/playlist?list=PL0iFifR5umcnAbG8YDTkHrTv7aSNX3sOT)
 
 - [x] justEnough
 - [x] reactTypescript (using vite)
