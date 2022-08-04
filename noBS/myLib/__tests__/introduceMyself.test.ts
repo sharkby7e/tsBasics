@@ -7,7 +7,7 @@ describe("introduceMyself", () => {
 });
 
 describe("Set", () => {
-  it("should return true", () => {
+  it("should initialize empty", () => {
     const set = new Set();
     expect(set.isEmpty()).toEqual(true);
   });
