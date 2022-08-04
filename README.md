@@ -3,7 +3,9 @@
 Learning TypeScript
 
 ## TomDoesTech
+
 ### [TSBasics](https://www.youtube.com/playlist?list=PL0iFifR5umcnAbG8YDTkHrTv7aSNX3sOT)
+
 - [x] justEnough
 - [x] reactTypescript (using vite)
 - [ ] ticTacToe with TypeScript and React
@@ -11,10 +13,13 @@ Learning TypeScript
 
 ## Ben Awad
 
-- [x] [Ben Awad's TS generic](https://youtu.be/nViEqpgwxHE)
+- [ ] [TS generics](https://youtu.be/nViEqpgwxHE)
+- [ ] [TS React](https://www.youtube.com/watch?v=Z5iWr6Srsj8)
 
 ## Jack Herrington
+
 ### [NoBS TS](https://www.youtube.com/playlist?list=PLNqp92_EXZBJYFrpEzdO2EapvU0GOJ09n)
+
 - [ ] Basic types
 - [ ] Functions
 - [ ] Functions with Functions
