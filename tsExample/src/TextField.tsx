@@ -11,18 +11,20 @@ interface Props {
   i: number;
   fn: (bob: string) => string;
   person: Person;
+  handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 interface TextNode {
   text: string;
 }
-export const TextField: React.FC<Props> = () => {
+
+export const TextField: React.FC<Props> = ({ handleChange }) => {
   const [count, setCount] = useState<TextNode>({ text: "butts" });
   const inputRef = useRef<HTMLInputElement>(null);
 
   return (
     <div>
-      <input ref={inputRef} />
+      <input ref={inputRef} onChange={handleChange} />
     </div>
   );
 };

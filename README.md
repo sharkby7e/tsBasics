@@ -13,8 +13,8 @@ Learning TypeScript
 
 ## Ben Awad
 
-- [ ] [TS generics](https://youtu.be/nViEqpgwxHE)
-- [ ] [TS React](https://www.youtube.com/watch?v=Z5iWr6Srsj8)
+- [ ] [TS generics](./generics/) - [Video](https://youtu.be/nViEqpgwxHE)
+- [x] [TS React](./tsExample/) - [Video](https://www.youtube.com/watch?v=Z5iWr6Srsj8)
 
 ## Jack Herrington
 
